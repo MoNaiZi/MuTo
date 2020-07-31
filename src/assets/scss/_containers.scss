@@ -1,0 +1,22 @@
+@import "mixins";
+.g-container{
+  width:100%;
+  height: 100%;
+}
+
+.g-view-container{
+  width:100%;
+  height: 100%;
+  padding-bottom:  $tabbar-height;
+  overflow: hidden;
+}
+
+.g-footer-container{
+  width:100%;
+  height: 50px;
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  box-shadow:0px -2px 2px rgba(0,0,0,0.1);
+}

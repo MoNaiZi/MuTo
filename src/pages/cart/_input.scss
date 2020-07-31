@@ -1,0 +1,30 @@
+ /deep/ input[type='checkbox']{
+    cursor:pointer;
+    position: relative;
+    width:1rem;
+    height: 1rem;
+    font-size: 0.9rem;
+    visibility: hidden;
+  }
+  //替代默认复选框，复选框
+  /deep/ input[type='checkbox']::after{
+    position:absolute;
+    top:0;
+    border: 1px solid;
+    color:#c8c7c6;
+    width:1rem;
+    height: 1rem;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0px;
+    text-align:center;
+    content: '';
+    border-radius: 50%;
+  }
+  //复选框选中
+  /deep/ input[type='checkbox']:checked::after{
+    content:'✔';
+    background-color:#fffdfb;
+    font-size:0.9rem;
+    color:#ff7d00;
+  }
